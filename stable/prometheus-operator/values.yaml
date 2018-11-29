@@ -464,7 +464,8 @@ prometheusOperator:
 
     ## Service type
     ##
-    type: ClusterIP
+    #type: ClusterIP
+    type: NodePort
 
   ## Deploy CRDs used by Prometheus Operator.
   ##
@@ -578,7 +579,8 @@ prometheus:
 
     ## Service type
     ##
-    type: ClusterIP
+    #type: ClusterIP
+    type: NodePort
 
   rbac:
     ## Create role bindings in the specified namespaces, to allow Prometheus monitoring
