@@ -11,7 +11,7 @@ metadata:
 {{ toYaml .Values.prometheusOperator.service.annotations | indent 4 }}
 {{- end }}
 spec:
-  clusterIP: None
+  #clusterIP: None
   ports:
   - name: http
     {{- if eq .Values.prometheusOperator.service.type "NodePort" }}
